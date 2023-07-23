@@ -7,7 +7,7 @@ function makeRequest(
   url,
   {
     data = null,
-    headers = { "Content-Type": "text/plain" },
+    headers = { "Content-Type": "text/plain; charset=utf-8" },
     responseType = "text",
     baseUrl = "",
   } = {}

@@ -46,7 +46,7 @@ public class TestDependencies extends WebappTestCase {
         final URL url = new URL(getServerUrl() + "/webjars/monaco-editor/0.36.1/min/vs/loader.js");
         final HttpURLConnection conn = (HttpURLConnection)url.openConnection();
         // Analyze response
-        // Verifies HTTP status code and the Content-Type
+        // Verifies HTTP status code
         Assertions.assertEquals(200, conn.getResponseCode(), "Bad HTTP status received");
     }
 

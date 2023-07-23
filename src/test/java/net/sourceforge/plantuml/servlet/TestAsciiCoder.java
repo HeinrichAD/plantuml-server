@@ -43,7 +43,7 @@ public class TestAsciiCoder extends WebappTestCase {
         final HttpURLConnection conn = (HttpURLConnection)url.openConnection();
         conn.setRequestMethod("POST");
         conn.setDoOutput(true);
-        conn.setRequestProperty("Content-type", "text/plain");
+        conn.setRequestProperty("Content-Type", "text/plain; charset=utf-8");
         try (final OutputStreamWriter writer = new OutputStreamWriter(conn.getOutputStream())) {
             writer.write(TestUtils.SEQBOBCODE);
             writer.flush();
